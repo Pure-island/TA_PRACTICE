@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1013560736648662086
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bce71d2dd764bd4da31476c83078bed, type: 3}
+  m_Name: Chapter05PostProcessVolume
+  m_EditorClassIdentifier: TA_Practice.Chapter05::TA_Practice.Chapter05.Chapter05PostProcessVolume
+  active: 1
+  grayscaleIntensity:
+    m_OverrideState: 0
+    m_Value: 0.782
+  crtIntensity:
+    m_OverrideState: 0
+    m_Value: 0.604
+  scanlineIntensity:
+    m_OverrideState: 1
+    m_Value: 0.83
+  scanlineCount:
+    m_OverrideState: 1
+    m_Value: 256
+  curvature:
+    m_OverrideState: 1
+    m_Value: 0.134
+  vignetteIntensity:
+    m_OverrideState: 1
+    m_Value: 0.558
+  edgeIntensity:
+    m_OverrideState: 0
+    m_Value: 1
+  edgeThreshold:
+    m_OverrideState: 1
+    m_Value: 0.43
+  edgeColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  blurIntensity:
+    m_OverrideState: 0
+    m_Value: 0.377
+  blurSize:
+    m_OverrideState: 1
+    m_Value: 2.53
+  blurIterations:
+    m_OverrideState: 1
+    m_Value: 1
+  bloomIntensity:
+    m_OverrideState: 0
+    m_Value: 3
+  bloomThreshold:
+    m_OverrideState: 1
+    m_Value: 0.42
+  bloomSoftKnee:
+    m_OverrideState: 1
+    m_Value: 0.288
+  bloomRadius:
+    m_OverrideState: 1
+    m_Value: 6
+  motionBlurIntensity:
+    m_OverrideState: 0
+    m_Value: 1
+  motionBlurDirection:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 1}
+  motionBlurSamples:
+    m_OverrideState: 1
+    m_Value: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
+  components:
+  - {fileID: -1013560736648662086}
